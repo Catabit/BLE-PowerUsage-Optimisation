@@ -2,7 +2,7 @@
 
 Proiect inscris in **Sesiunea de comunicari stiintifice studentesti** Mai 2018.
 
-Scopul proiectului este optimizarea autonomiei unui presupus device medical ce colecteaza periodic date despre pacient si le sincronizeaza cu telefonul acestuia la anumite intervale.
+Scopul proiectului este optimizarea autonomiei unui presupus device medical ce colecteaza periodic date despre pacient si le sincronizeaza cu telefonul acestuia la anumite intervale. In cazul de fata, datele colectate proveneau de la un accelerometru ADXL345.
 
 Pentru această clasă de dispozitive, pe primul loc ca importantă constructivă se află autonomia: cu cât un device poate fi folosit mai mult cu o singură încărcare, cu atât se pot colecta mai multe date folositoare iar utilizatorul nu este deranjat zilnic de incarcarea acestuia.
 Pentru optimizarea consumului de curent, am ales să construiesc un algoritm care, pe baza indicelui de semnal radio RSSI, decide dacă un set de date colectate anterior ar trebui transmise către client (telefon) pentru procesare sau dacă ar trebui amânata transmisia până când condițiile radio sunt mai bune (distanța intre cele două radio-uri este mai mică – când telefonul pacientului este aproape de device). Astfel, device-ul se poate afla in două stări de funcționare, odată conectat la client:
